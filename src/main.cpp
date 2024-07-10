@@ -22,6 +22,8 @@ void setup() {
     Serial.printf("WS - Error: %d. Message: %s\n", error.code, error.message);
   });
 
+  // webSocket.addHeader("key", "value");
+  // webSocket.addHeader("key1", "value1");
   webSocket.listen(SERVER_URL);
   // webSocket.listen(SERVER_URL, "/path");
   // webSocket.listen(IPAddress(192, 168, 0, 1), 80, "/path");
